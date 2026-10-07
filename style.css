@@ -1,0 +1,123 @@
+/* =========================================================
+   1 · LA PALETA DE BOCA
+   Se escribe UNA sola vez, acá arriba. Todo lo demás usa var().
+   ========================================================= */
+:root {
+  /* Los colores principales de Boca */
+  --azul:      #003B7A;
+  --azul-oscuro: #001F4D;
+  --amarillo:  #F9D616;
+  --azul-claro: #0A5CA8;
+
+  /* Escala del azul */
+  --azul-900: #001F4D;
+  --azul-800: #002B5C;
+  --azul-700: #003B7A;
+  --azul-500: #0A5CA8;
+  --azul-300: #4A8AC2;
+  --azul-200: #82ADD3;
+  --azul-100: #B8D2E8;
+  --azul-50:  #DCEBFA;
+  --azul-25:  #EEF6FC;
+
+  --texto:       #003B7A;
+  --texto-suave: #52657A;
+  --blanco:      #ffffff;
+}
+
+/* =========================================================
+   2 · LA PÁGINA ENTERA
+   display:flex + justify-content:center centran la tarjeta
+   en pantalla sin usar márgenes a ojo.
+   ========================================================= */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--azul-900);
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  color: var(--texto);
+}
+
+/* =========================================================
+   3 · LA TARJETA
+   ========================================================= */
+.tarjeta {
+  background: var(--blanco);
+  border-top: 8px solid var(--amarillo);
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  max-width: 420px;
+}
+
+/* =========================================================
+   4 · CADA PARTE DE LA TARJETA
+   ========================================================= */
+.tarjeta__logo {
+  width: 125px;
+  height: 125px;
+  object-fit: contain;
+}
+
+.tarjeta__curso {
+  margin: .75rem 0 0;
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--azul);
+}
+
+.tarjeta__nombre {
+  margin: .4rem 0 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--azul);
+}
+
+.tarjeta__frase {
+  margin: 1rem 0 0;
+  font-size: 1.25rem;
+  line-height: 1.55;
+  color: var(--azul-700);
+}
+
+.tarjeta__autor {
+  margin: 1.25rem 0 0;
+  font-size: .82rem;
+  color: var(--texto-suave);
+}
+
+/* Variante oscura: mismo bloque, otra combinación de la paleta */
+.tarjeta--oscura {
+  background: var(--blanco);
+  border-top-color: var(--amarillo);
+}
+
+.tarjeta__pregunta {
+  margin: 0;
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--azul-900);
+}
+
+.tarjeta__respuesta {
+  margin: .5rem 0 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--azul);
+  list-style: none;
+}
+
+/* Para que las dos tarjetas se apilen con un hueco entre ellas */
+body {
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
