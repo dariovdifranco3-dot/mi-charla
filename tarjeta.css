@@ -1,0 +1,276 @@
+/* =========================================================
+   1 · LA PALETA DEL CURSO
+   ========================================================= */
+:root {
+    /* Colores TED */
+    --ted-red: #E62B1E;
+    --ted-red-dark: #B91C1C;
+    --ted-red-light: #FF5147;
+
+    /* Fondos */
+    --bg-primary: #0B0B0B;
+    --bg-secondary: #171717;
+    --bg-card: #242424;
+
+    /* Textos */
+    --text-primary: #FFFFFF;
+    --text-secondary: #B8B8B8;
+    --text-muted: #888888;
+
+    /* Detalles */
+    --border-color: #353535;
+    --accent-color: #E62B1E;
+    --highlight-color: #FF5147;
+
+    /* Efectos */
+    --gradient-ted: linear-gradient(135deg, #E62B1E 0%, #8B0000 100%);
+    --gradient-dark: linear-gradient(180deg, #171717 0%, #0B0B0B 100%);
+
+    --shadow-red: 0 0 20px rgba(230, 43, 30, .2);
+    --shadow-dark: 0 8px 24px rgba(0, 0, 0, .4);
+
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   2 · LA PÁGINA ENTERA
+   ========================================================= */
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--bg-primary);
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    color: var(--text-primary);
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* =========================================================
+   3 · LA TARJETA
+   ========================================================= */
+
+.hero {
+    width: 125vh;
+    justify-content: space-between;
+    display: flex;
+    gap: 15px;
+    padding: 2.5rem 2rem;
+    background: var(--bg-card);
+    color: var(--text-primary);
+
+    border: 1px solid var(--border-color);
+    border-top: 8px solid var(--ted-red);
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-dark);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.temas {
+    width: 125vh;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    display: flex;
+    gap: 10px;
+    background: var(--bg-card);
+    color: var(--text-primary);
+
+    border: 1px solid var(--border-color);
+    border-top: 8px solid var(--ted-red);
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-dark);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.tarjeta {
+    width: 100%;
+
+    padding: 2.5rem 2rem;
+    text-align: center;
+
+    background: var(--bg-card);
+    color: var(--text-primary);
+
+    border: 1px solid var(--border-color);
+    border-top: 8px solid var(--ted-red);
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-dark);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-red);
+}
+
+
+
+
+.tarjeta__logo {
+    width: 92px;
+    height: 92px;
+    object-fit: contain;
+}
+
+
+.tarjeta__curso {
+    margin: .75rem 0 0;
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--ted-red-light);
+}
+
+
+.tarjeta__nombre {
+    margin: .4rem 0 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    color: var(--text-primary);
+}
+
+
+.tarjeta__frase {
+    margin: 1rem 0 0;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+
+.tarjeta__autor {
+    margin: 1.25rem 0 0;
+    font-size: .82rem;
+    color: var(--text-muted);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    padding: 1rem 2rem;
+    background: var(--bg-secondary);
+    border-bottom: 2px solid var(--ted-red);
+    box-shadow: var(--shadow-dark);
+}
+
+#title {
+    margin: 0;
+    font-size: 25px;
+    color: var(--text-primary);
+}
+
+#title:hover {
+    color: var(--accent-color);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: .5rem;
+    padding: .5rem 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 0;
+
+}
+
+ul a {
+    display: inline-block;
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: .6rem .85rem;
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    font-size: .875rem;
+    white-space: nowrap;
+    transition: .2s ease;
+}
+
+ul a:hover {
+    background-color: var(--accent-color);
+    color: var(--text-primary);
+}
+
+.nav a {
+    display: inline-block;
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: .6rem .85rem;
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    font-size: .875rem;
+    white-space: nowrap;
+    transition: .2s ease;
+}
+
+.nav a:hover,
+.nav a:focus-visible {
+    color: var(--text-primary);
+    background: var(--ted-red);
+    border-color: var(--ted-red-light);
+    outline: none;
+}
+
+.temas__tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+details {
+    list-style: none;
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    justify-content: center;
+}
+
+summary {
+    list-style: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+summary::before {
+    content: "Ver más";
+}
+
+details[open] summary::before {
+    content: "Ver menos";
+}
+
+summary:hover {
+    color: var(--text-primary);
+    background: var(--ted-red);
+    border-color: var(--ted-red-light);
+    outline: none;
+}
