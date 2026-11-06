@@ -123,26 +123,32 @@ ul a:hover {
 }
 
 .contenedor {
-    background: var(--gradient-dark);
+    background-color: var(--gradient-dark);
     margin: 0 auto;
-    display: flex;
-    gap: var(--e-4);
-    flex-wrap: wrap;
+    width: 1000px;
     justify-content: center;
-    justify-content: space-evenly;
-    padding: var(--e-3);
+    align-items: center;
 }
+  
 
 .main-guion {
     background-color: var(--bg-card);
-    width: 360px;
+    width: 100%;
+    justify-content: center;
     text-align: center;
-    border: 3px solid var(--border-color);
-    padding: var(--e-5);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-dark);
+    border-radius: var(--radius-sm);
+    border:2px solid var(--accent-color) ;
 }
 
+table{
+    margin: 0;
+    border: 2px solid var(--text-primary);
+}
+
+tr, td{
+    margin: 0;
+    border: 2px solid var(--text-primary);
+}
 
 .main-guion h2 {
     text-align: center;

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="temporizador.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Temporizador · Mi charla TED</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="title">Mi charla TED</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Tarjeta.html">Tarjetas</a></li>
+                <li><a href="ficha.html">Introducciòn</a></li>
+                <li><a href="boxmodel.html">Ideas Personales</a></li>
+                <li><a href="guion.html">Charla</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="timer">
+            <div class="timer__card">
+
+                <h2 class="timer__title">Temporizador</h2>
+
+                <p class="timer__description">
+                    Controla el tiempo de tu presentación
+                </p>
+
+                <div class="timer__display">
+                    <span id="reloj">00:00</span>
+                </div>
+
+                <div class="timer__controls">
+                    <button class="timer__btn timer__btn--start" onclick="iniciar()">
+                        Iniciar
+                    </button>
+
+                    <button class="timer__btn timer__btn--pause" onclick="pausar()">
+                        Pausar
+                    </button>
+
+                    <button class="timer__btn timer__btn--reset" onclick="reiniciar()">
+                        Reiniciar
+                    </button>
+                </div>
+
+                <div class="timer__status">
+                    <span class="timer__status-dot"></span>
+                    <p id="estado">Temporizador detenido</p>
+                </div>
+
+            </div>
+            <script src="tempo.js"></script>
+        </section>
+    </main>
+    <footer class="container--footer">
+
+        <div class="footer--top">
+
+            <section class="footer--top-card">
+                <h4>Mi charla TED</h4>
+                <p>
+                    Un espacio para compartir ideas, aprender,
+                    inspirarse y descubrir nuevas formas de
+                    ver el mundo.
+                </p>
+            </section>
+
+            <section class="footer--top-card">
+                <h4>Explorá el sitio</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Tarjeta.html">Mi tarjeta</a></li>
+                    <li><a href="ficha.html">Introducción</a></li>
+                    <li><a href="boxmodel.html">Ideas personales</a></li>
+                </ul>
+            </section>
+
+            <section class="footer--top-card">
+                <h4>Mis intereses</h4>
+                <ul>
+                    <li><a href="Tarjeta.html#HTML">Desarrollo web</a></li>
+                    <li><a href="Tarjeta.html#computadoras">Tecnología</a></li>
+                    <li><a href="Tarjeta.html#IA">Inteligencia artificial</a></li>
+                    <li><a href="boxmodel.html">Innovación</a></li>
+                </ul>
+            </section>
+
+            <section class="footer--top-class">
+                <h4>Conocé más sobre TED</h4>
+                <p>
+                    Descubrí charlas inspiradoras y nuevas ideas
+                    en la página oficial de TED.
+                </p>
+
+                <a href="https://www.ted.com/" target="_blank" class="footer--top-btn">
+                    Visitar TED
+                </a>
+
+                <div class="footer--top-social">
+                    <a href="https://www.facebook.com/TED" target="_blank" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@ted" target="_blank" aria-label="TikTok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/ted/" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@TED" target="_blank" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="footer--bottom">
+
+            <section class="footer--bottom-legal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="https://www.ted.com/" target="_blank">Sitio oficial TED</a></li>
+                </ul>
+
+                <p>
+                    © 2026 Mi charla TED. Proyecto educativo.
+                </p>
+                <p>
+                    Realizado por Dario Difranco · 4° año
+                </p>
+            </section>
+
+            <section class="footer--bottom-cards">
+                <p>Ideas que inspiran, conocimientos que transforman.</p>
+            </section>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
