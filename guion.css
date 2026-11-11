@@ -122,38 +122,111 @@ ul a:hover {
     outline: none;
 }
 
+main {
+    margin: 15px;
+}
+
 .contenedor {
     background-color: var(--gradient-dark);
     margin: 0 auto;
     width: 1000px;
     justify-content: center;
     align-items: center;
+
 }
-  
 
 .main-guion {
-    background-color: var(--bg-card);
-    width: 100%;
+    margin: 15px;
+    background-color: var(--bg-primary);
+    border: 3px solid var(--accent-color);
+    border-radius: 10px;
+    color: var(--ted-red-light);
     justify-content: center;
     text-align: center;
-    border-radius: var(--radius-sm);
-    border:2px solid var(--accent-color) ;
 }
 
-table{
-    margin: 0;
-    border: 2px solid var(--text-primary);
-}
 
-tr, td{
-    margin: 0;
-    border: 2px solid var(--text-primary);
+
+.guion-etiqueta {
+    margin: 15px;
+    width: 210px;
+    text-align: start;
+    justify-content: center;
+    background-color: var(--highlight-color);
+    color: var(--text-primary);
+    border: 1px solid var(--highlight-color);
+    border-radius: 10px;
+
 }
 
 .main-guion h2 {
-    text-align: center;
-    justify-content: center;
+    border-bottom: 1px solid var(--highlight-color);
+    font-size: 35px;
 }
+
+.main-guion h3 {
+    border-bottom: 1px solid var(--highlight-color);
+    font-size: 25px;
+}
+
+.guion {
+    margin: 10px;
+    background-color: var(--bg-card);
+    border-top: 2px solid var(--accent-color);
+    border-radius: 10px;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.main-guion table,
+tr,
+td {
+    margin: 5px;
+    border: 1px solid var(--accent-color);
+    border-collapse: collapse;
+    line-height: 25px;
+    font-size: 15px;
+    border-radius: 10px;
+
+}
+
+
+.main-guion thead {
+    background-color: var(--highlight-color);
+    color: var(--text-primary);
+}
+
+
+.guion-frase {
+    background: linear-gradient(to left, var(--ted-red-dark), var(--ted-red), var(--ted-red-light));
+    margin: 15px;
+    width: 934px;
+    height: 300px;
+    font-size: 40px;
+    color: var(--text-primary);
+    border: 2px solid var(--accent-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.guion-final{
+    margin: 15px;
+
+}
+
+.guion-final-etiqueta {
+    margin-bottom: 15px;
+    width: 125px;
+    display: flex;
+    text-align: start;
+    justify-content: flex-start;
+    background-color: var(--highlight-color);
+    color: var(--text-primary);
+    border: 1px solid var(--highlight-color);
+    border-radius: 10px;
+}
+
 
 .container--footer {
     background: var(--bg-primary);
